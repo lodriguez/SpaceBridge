@@ -3,7 +3,6 @@ import time
 import threading
 import sys
 import os
-import collections # For deque to store last axis values
 from evdev import UInput, ecodes, AbsInfo # pip install evdev
 import logging
 
