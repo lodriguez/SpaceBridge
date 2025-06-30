@@ -5,7 +5,7 @@ import time
 import threading
 import sys
 import os
-from evdev import UInput, ecodes, AbsInfo # pip install evdev
+from evdev import UInput, ecodes, AbsInfo
 import logging
 
 # Logging levels used in this script: logging.ERROR, logging.WARNING, logging.INFO, logging.DEBUG
@@ -23,7 +23,7 @@ def setup_logging(level=LOGLEVEL):
 logger = logging.getLogger("SpaceControl")
 
 # --- Configuration ---
-SC_LIB_PATH = "/opt/SpaceControl/lib/libspc_ctrl.so" # Verify this path
+SC_LIB_PATH = "/usr/lib/spacecontrol/lib/libspc_ctrl.so" # Verify this path
 
 # --- Device Enablement Flags ---
 # Set to True to enable the corresponding virtual device, False to disable.
