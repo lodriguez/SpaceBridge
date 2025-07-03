@@ -1,0 +1,12 @@
+[Unit]
+Description=SpaceBridge translator for spacenavd
+Requires=sc-daemon.service
+After=sc-daemon.service spacenavd.service
+
+[Service]
+Type=simple
+ExecStart=/usr/lib/spacecontrol/spacebridge.py
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
